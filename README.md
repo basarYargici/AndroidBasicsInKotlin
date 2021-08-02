@@ -1,0 +1,2 @@
+This repository is created to keep my solutions which are made for "Google Android Basics In Kotlin" course!
+<p>An absolute URL: <a href="https://developer.android.com/courses/android-basics-kotlin/course">Google Android Basics In Kotlin</a></p>
