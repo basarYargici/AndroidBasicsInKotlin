@@ -2,7 +2,6 @@ package com.example.unit2tipcalculator
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.RadioButton
 import com.example.unit2tipcalculator.databinding.ActivityMainBinding
 import java.text.NumberFormat
 import kotlin.math.ceil
@@ -31,7 +30,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun calculateTip(): Double {
         val tipPercentage: Double
-        val serviceCost: Double? = binding.etCost.text.toString().toDoubleOrNull()
+        val serviceCost: Double? = binding.costOfServiceEditText.text.toString().toDoubleOrNull()
         val selectedRbId: Int = binding.rgService.checkedRadioButtonId
 
         if (serviceCost == null) return 0.0
