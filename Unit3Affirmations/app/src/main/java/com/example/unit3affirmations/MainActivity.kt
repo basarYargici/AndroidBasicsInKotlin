@@ -1,7 +1,7 @@
 package com.example.unit3affirmations
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.unit3affirmations.adapter.ItemAdapter
 import com.example.unit3affirmations.data.DataSource
