@@ -34,6 +34,10 @@ class MainActivity : AppCompatActivity() {
     // Contains all the views
     private lateinit var binding: ActivityMainBinding
 
+    companion object {
+        const val KEY_REVENUE = "revenue_key"
+        const val KEY_DESSERT_SOLD = "dessert_sold_key"
+    }
     /** Dessert Data **/
 
     /**
@@ -65,6 +69,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         // Use Data Binding to get reference to the views
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+
+        if (savedInstanceState != null) {
+            revenue = savedInstanceState.getInt(KEY_REVENUE)
+            dessertsSold = savedInstanceState.getInt(KEY_DESSERT_SOLD)
+            showCurrentDessert()
+        }
 
         binding.dessertButton.setOnClickListener {
             onDessertClicked()
@@ -131,6 +141,12 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, getString(R.string.sharing_not_available),
                     Toast.LENGTH_LONG).show()
         }
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putInt(KEY_REVENUE, revenue)
+        outState.putInt(KEY_DESSERT_SOLD, dessertsSold)
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
