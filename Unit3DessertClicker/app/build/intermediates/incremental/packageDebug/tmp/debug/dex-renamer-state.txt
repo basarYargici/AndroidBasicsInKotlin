@@ -1,0 +1,4 @@
+#Tue Aug 10 20:01:14 EET 2021
+base.0=D\:\\MobileApplications\\AndroidProjects\\AndroidBasicsInKotlin\\Unit3DessertClicker\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
