@@ -1,0 +1,14 @@
+*.iml
+.idea
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+/.github/
+/code-of-conduct.md
+/CONTRIBUTING.md
+/app/proguard-rules.pro
+/.gradle/
+/gradle/
